@@ -1,0 +1,82 @@
+{
+  "name": "react-native-webrtc-playback",
+  "version": "0.1.0",
+  "description": "Makes react-native-webrtc playback sound like media, not a phone call: a play-only audio path, a voice leveller behind a limiter, and a playout buffer that rides out poor networks. iOS, Android, Expo.",
+  "main": "lib/index",
+  "module": "lib/index",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index",
+  "source": "src/index",
+  "files": [
+    "src",
+    "lib",
+    "nitrogen",
+    "android/build.gradle",
+    "android/gradle.properties",
+    "android/fix-prefab.gradle",
+    "android/CMakeLists.txt",
+    "android/src",
+    "ios",
+    "NitroWebRtcPlayback.podspec",
+    "app.plugin.js",
+    "plugin",
+    "nitro.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "typescript": "tsc",
+    "specs": "tsc --noEmit false && nitrogen --logLevel=\"debug\"",
+    "prepublishOnly": "rm -rf lib tsconfig.tsbuildinfo && tsc && nitrogen"
+  },
+  "keywords": [
+    "react-native",
+    "react-native-nitro-modules",
+    "nitro-module",
+    "expo",
+    "expo-plugin",
+    "webrtc",
+    "whep",
+    "playback",
+    "react-native-webrtc",
+    "audio",
+    "playout",
+    "leveller",
+    "compressor",
+    "limiter",
+    "jitter-buffer",
+    "live-streaming",
+    "ant-media",
+    "android",
+    "ios"
+  ],
+  "license": "MIT",
+  "author": "fluxlabs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fluxlabs-tech/react-native-webrtc-playback.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Fluxlabs-tech/react-native-webrtc-playback/issues"
+  },
+  "homepage": "https://github.com/Fluxlabs-tech/react-native-webrtc-playback#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@expo/config-plugins": "~57.0.9",
+    "@types/react": "^19.1.0",
+    "nitrogen": "0.37.1",
+    "react": "19.2.0",
+    "react-native": "0.83.0",
+    "react-native-nitro-modules": "0.37.1",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-nitro-modules": ">=0.37.0",
+    "react-native-webrtc": ">=124.0.0 <125.0.0"
+  }
+}

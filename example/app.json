@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "WebRTC Playback",
+    "slug": "webrtc-playback-example",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fluxlabs.webrtcplaybackexample"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.fluxlabs.webrtcplaybackexample"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-webrtc-playback",
+        {
+          "leveller": true,
+          "networkResilience": true,
+          "playoutDelayMs": 1200,
+          "maxPlayoutDelayMs": 2500
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- libwebrtc's network monitor queries connectivity as each peer connection
+       starts, and aborts the process when that throws. react-native-webrtc
+       declares no permissions of its own. A normal permission: no prompt. -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+  <application>
+    <!-- Installs the playout path before Application.onCreate, so it is in
+         place before react-native-webrtc builds its peer connection factory. -->
+    <provider
+      android:name="com.margelo.nitro.webrtcplayback.WebRtcPlaybackInitProvider"
+      android:authorities="${applicationId}.webrtcplayback-init"
+      android:exported="false" />
+  </application>
+</manifest>
