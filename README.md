@@ -1,5 +1,9 @@
 # react-native-webrtc-playback
 
+[![npm version](https://img.shields.io/npm/v/react-native-webrtc-playback.svg)](https://www.npmjs.com/package/react-native-webrtc-playback)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-webrtc-playback.svg)](https://www.npmjs.com/package/react-native-webrtc-playback)
+[![license](https://img.shields.io/npm/l/react-native-webrtc-playback.svg)](LICENSE)
+
 Make [react-native-webrtc](https://github.com/react-native-webrtc/react-native-webrtc) **playback** sound like media instead of a phone call, and keep playing through a poor network.
 
 For apps that **watch** WebRTC streams (live commerce, live events, auctions, monitoring). It changes how the receiving side plays out audio and buffers the stream. It does not touch signalling, so it works with any server: WHEP, Ant Media, LiveKit, Janus, mediamtx, or your own.
